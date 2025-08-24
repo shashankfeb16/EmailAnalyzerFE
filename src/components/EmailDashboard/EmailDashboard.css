@@ -1,0 +1,29 @@
+.email-dashboard {
+  padding: 24px;
+}
+
+.email-dashboard .MuiCard-root {
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.email-dashboard .MuiCard-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.email-dashboard .MuiChip-root {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .email-dashboard {
+    padding: 16px;
+  }
+  
+  .email-dashboard .MuiChip-root {
+    margin-bottom: 12px;
+  }
+}

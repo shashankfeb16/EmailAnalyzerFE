@@ -1,0 +1,41 @@
+.email-list-container {
+  padding: 24px;
+}
+
+.email-list-item {
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.email-list-item:hover {
+  background-color: #f8f9fa;
+}
+
+.email-list-item:last-child {
+  border-bottom: none;
+}
+
+.email-list-item .MuiListItemText-primary {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.email-list-item .MuiListItemText-secondary {
+  line-height: 1.4;
+}
+
+.email-list-item .MuiChip-root {
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .email-list-container {
+    padding: 16px;
+  }
+  
+  .email-list-item .MuiChip-root {
+    margin-bottom: 8px;
+  }
+}

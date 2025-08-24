@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* App-level styles */
+.app-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.main-container {
+  padding: 32px 0;
 }
 
-@keyframes logo-spin {
+.input-paper,
+.results-paper {
+  height: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Smooth animations for results */
+.results-paper {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* About section animation */
+.about-section-container {
+  animation: fadeIn 1s ease-out 0.3s both;
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-.card {
-  padding: 2em;
+/* Hover effects */
+.input-paper:hover,
+.results-paper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.read-the-docs {
-  color: #888;
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .main-container {
+    padding: 16px 0;
+  }
+  
+  .results-paper {
+    animation: fadeIn 0.4s ease-out;
+  }
 }

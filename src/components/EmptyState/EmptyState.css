@@ -1,0 +1,34 @@
+.empty-state-container {
+  padding: 48px 24px;
+  text-align: center;
+  color: #666;
+  background-color: #fafafa;
+}
+
+.empty-state-icon {
+  font-size: 64px !important;
+  opacity: 0.3;
+  margin-bottom: 16px;
+  color: #666 !important;
+}
+
+.empty-state-title {
+  margin-bottom: 8px !important;
+  color: #666 !important;
+}
+
+.empty-state-description {
+  color: #999 !important;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .empty-state-container {
+    padding: 32px 16px;
+  }
+  
+  .empty-state-icon {
+    font-size: 48px !important;
+  }
+}
