@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const API_BASE_URL = "http://localhost:3000";
+
+const API_BASE_URL = import.meta.env.PROD 
+  ? "https://emailanalyzerbe.onrender.com" 
+  : "http://localhost:3000";
 
 export const analyzeEmailHeader = async (data) => {
   try {
